@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/27faea61eb.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Fruits</title>
 </head>
@@ -16,7 +17,7 @@
         <!-- Large Device -->
         <div class="hidden sm:block">
             <div class="bg-[#F85559] rounded-[600px] flex flex-row justify-between py-4 mt-6 mx-6">
-                <div class="navbar ml-16 mt-2">
+                <div class="ml-16 mt-2">
                     <ul class="flex flex-row  gap-3 text-white items-center">
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
@@ -24,11 +25,11 @@
                         <li><a href="">All Fruits</a></li>
                     </ul>
                 </div>
-                <div class="logo flex flex-row items-center">
+                <div class="flex flex-row items-center">
                     <img class="w-[30px] h-[30px]" src="/images/logo.png" alt="">
                     <h3 class="text-2xl ml-2 text-white font-medium">Fruit Brust</h3>
                 </div>
-                <div class="search mr-12 relative">
+                <div class="mr-12 relative">
                     <input class="px-6 py-2 rounded-full" type="text" placeholder="Search here">
                     <i class="fa-solid fa-magnifying-glass absolute right-5 top-3"></i>
                 </div>
@@ -48,6 +49,75 @@
                 </div>
         </div>
     </header>
+
+    <!-- Banner Section -->
+    <section class="relative py-6">
+    <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="/images/banner1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="/images/banner2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="/images/banner3.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="/images/banner4.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div class="absolute text-white  bottom-40 right-80 text-center">
+            <h1 class="text-5xl font-semibold ">Exotic tastes at your doorstep</h1>
+            <p class="text-sm py-6">We supply highly quality organic products</p>
+            <button class="px-4 py-2 bg-[#F85559] text-white rounded-lg">Shop Now</button>
+        </div>
+      </div>
+
+      <!-- Fruits section -->
+      <div class="w-[80%] mx-auto absolute bg-white bottom-[-70px] left-32 rounded-lg py-12">
+        <div class="flex justify-center gap-6 text-center text-sm font-semibold ">
+            <div>
+                <img class="w-[90px] h-[80px]" src="images/fruit1.png" alt="">
+                <p>Strawberry</p>
+            </div>
+
+            <div>
+                <img class="w-[90px] h-[80px]" src="images/fruit2.png" alt="">
+                <p>Orange</p>
+            </div>
+
+            <div>
+                <img class="w-[90px] h-[80px]" src="images/fruit3.png" alt="">
+                <p>Mango</p>
+            </div>
+
+            <div>
+                <img class="w-[90px] h-[80px]" src="images/fruit4.png" alt="">
+                <p>Strawberry</p>
+            </div>
+
+            <div>
+                <img class="w-[90px] h-[80px]" src="images/fruit5.png" alt="">
+                <p>Mango</p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Team Section -->
     <section class="py-24 " style="background-image: linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0.66)), url('/images/banner1.png');">
@@ -121,7 +191,7 @@
             <img class="w-[30px] h-[30px]" src="/images/logo.png" alt="">
             <h3 class="text-2xl ml-2 text-white font-medium">Fruit Brust</h3>
         </div>
-        <div class="navbar mt-2"> 
+        <div class="mt-2"> 
             <ul class="grid grid-cols-3 gap-2 py-6 text-xs justify-center sm:flex sm:flex-row sm:gap-6 font-thin text-white md:items-center md:text-base sm:py-6 lg:text-xl">
                 <li><a href="">Home</a></li>
                 <li><a href="">About Us</a></li>
