@@ -15,7 +15,7 @@
     <!-- Header -->
     <header class="header">
         <!-- Large Device -->
-        <div class="hidden sm:block">
+        <div class="hidden lg:block">
             <div class="bg-[#F85559] rounded-[600px] flex flex-row justify-between py-4 mt-6 mx-6">
                 <div class="ml-16 mt-2">
                     <ul class="flex flex-row  gap-3 text-white items-center">
@@ -37,7 +37,7 @@
         </div>
 
         <!-- Small Device -->
-        <div class="sm:block md:hidden">
+        <div class="sm:block md:block lg:hidden">
                 <div class="flex justify-between py-6 mx-auto w-[80%]">
                     <div class="flex flex-row items-center">
                         <img class="w-[30px] h-[30px]" src="images/logo.png" alt="">
@@ -51,7 +51,7 @@
     </header>
 
     <!-- Banner Section -->
-    <section class="relative py-6">
+    <section class="sm:relative py-6">
     <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="images/banner1.png" class="w-full" />
@@ -81,15 +81,15 @@
             <a href="#slide1" class="btn btn-circle">❯</a>
           </div>
         </div>
-        <div class="absolute text-white  bottom-40 right-80 text-center">
-            <h1 class="text-5xl font-semibold ">Exotic tastes at your doorstep</h1>
-            <p class="text-sm py-6">We supply highly quality organic products</p>
-            <button class="px-4 py-2 bg-[#F85559] text-white rounded-lg">Shop Now</button>
+        <div class="absolute text-white  sm:bottom-40 sm:right-80 text-center">
+            <h1 class="text-md sm:text-5xl font-semibold ">Exotic tastes at your doorstep</h1>
+            <p class="text-xs sm:text-sm sm:py-6">We supply highly quality organic products</p>
+            <button class="px-2 py-1 text-sm sm:text-lg sm:px-4 sm:py-2 bg-[#F85559] text-white rounded-lg">Shop Now</button>
         </div>
       </div>
 
       <!-- Fruits section -->
-      <div class="hidden sm:block w-[60%] mx-auto absolute bg-white bottom-[-70px] left-56 rounded-lg py-12">
+      <div class="hidden lg:block w-[60%] mx-auto absolute bg-white bottom-[-70px] left-56 rounded-lg py-12">
         <div class="flex justify-center gap-6 text-center text-sm font-semibold ">
             <div>
                 <img class="w-[90px] h-[80px]" src="images/fruit1.png" alt="">
@@ -121,11 +121,12 @@
 
     <!-- Deal of the day section -->
     <section class="mt-32">
-        <div class="flex justify-between w-[80%] mx-auto">
+        <div class="flex flex-col sm:flex-row justify-between w-[80%] mx-auto">
             <div class="w-[60%]">
                 <h1 class="text-5xl font-semibold">Deal of the day</h1>
                 <p class="pt-4 text-md">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
+
             <div class="flex gap-6 justify-center">
                 <div class="borde">
                     <h1 class="font-bold text-2xl">29</h1>
@@ -151,11 +152,69 @@
     </section>
     
     <!-- fruits setion -->
-    <section>
-        <div class="container">
-            <img src="" alt="">
-            <p></p>
-            <span></span>
+    <section class="mx-auto">
+        <div class="flex flex-col justify-center gap-20">
+            <!-- Fruits -->
+            <div class="border">
+                <img class src="images/fruit6.png" alt="">
+                <p>12.90$ - 18.85$</p>
+                <hr class="divide-x-4">
+                <p></p>
+                <ul class="flex flex-row">
+                    <li><i class="fa-solid fa-star" fill="#F85559"></i></li>
+                    <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                <span>Details</span>
+            </div>
+
+            <div>
+                <img src="images/fruit7.png" alt="">
+                <p>12.90$ - 18.85$</p>
+                <hr>
+                <p></p>
+                <ul>
+                    <li><i class="fa-solid fa-star" fill="#F85559"></i></li>
+                    <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                <span>Details</span>
+            </div>
+
+            <div>
+                <img src="images/fruit8.png" alt="">
+                <p>12.90$ - 18.85$</p>
+                <hr>
+                <p></p>
+                <ul>
+                    <li><i class="fa-solid fa-star" fill="#F85559"></i></li>
+                    <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                <span>Details</span>
+            </div>
+
+            <div>
+                <img src="images/fruit9.png" alt="">
+                <p>12.90$ - 18.85$</p>
+                <hr>
+                <p></p>
+                <ul>
+                    <li><i class="fa-solid fa-star" fill="#F85559"></i></li>
+                    <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                <span>Details</span>
+            </div>
+            <!-- Fruits -->
         </div>
     </section>
 
@@ -163,10 +222,10 @@
     <section class="py-24 " style="background-image: linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0.66)), url('images/banner1.png');">
        <div class="flex flex-col justify-center items-center">
         <div class="text-center mb-6 text-white">
-            <h1 class="text-4xl font-semibold">Meet the team section</h1>
-            <p class="text-md mt-6">Contrary to popular belief, is not simply random text. <br> It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <h1 class="text-2xl sm:text-4xl font-semibold">Meet the team section</h1>
+            <p class="text-sm w-[80%] mx-auto sm:text-md lg:text-xl mt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
-        <div class="flex flex-row gap-20 mt-12 ">
+        <div class="flex flex-col md:grid md:grid-cols-2 gap-10 sm:flex-row sm:gap-20 sm:mt-12 ">
             <!-- Team mates -->
            <div class="flex flex-col justify-center items-center text-white">
               <img src="images/member1.png" alt="">
